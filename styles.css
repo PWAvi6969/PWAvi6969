@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(images/background.jpg) center/cover;
+}
+
+.search-box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#map {
+    width: 40px; /* Adjust map width */
+    height: 40px; /* Adjust map height */
+    margin-right: 10px; /* Add space between map and search input */
+}
+
+.search-input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 300px; /* Limit maximum width of search input */
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 6px 10px; /* Adjust padding as needed */
+}
+
+.search-input input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    padding: 6px;
+    outline: none;
+}
+
+.search-input button {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+    margin-left: 10px; /* Add space between input and button */
+}
+
+.weather-box {
+    text-align: center;
+    margin: 40px auto; /* Center the weather box */
+}
+
+.box {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather img {
+    width: 80px; /* Adjust the weather icon size */
+    margin-bottom: 10px; /* Add space between the weather icon and temperature */
+}
+
+.temperature {
+    font-size: 36px; /* Decrease temperature font size */
+    margin-bottom: 5px; /* Add space between temperature and description */
+}
+
+.description {
+    font-size: 18px; /* Decrease description font size */
+    text-transform: capitalize;
+    margin-bottom: 20px; /* Add space between description and details */
+}
+
+.weather-details {
+    display: flex;
+    justify-content: space-around;
+}
+
+.humidity,
+.wind {
+    flex-basis: 50%;
+}
+
+.humidity i,
+.wind i {
+    font-size: 24px; /* Decrease icon size */
+    margin-bottom: 5px; /* Add space between icon and text */
+}
+
+.text {
+    text-align: center; /* Center text */
+}
+
+.info-humidity,
+.info-wind-speed {
+    margin-bottom: 5px; /* Add space between humidity/wind speed value and label */
+}
+
+.not-found {
+    text-align: center; /* Center text */
+    margin-top: 20px; /* Add space above not found message */
+}
+
